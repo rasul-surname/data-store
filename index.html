@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	<title>Хранилище данных</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center mb-3">Практика с хранилищем данных</h1>
+		<div class="text-center mb-5">
+			<button type="submit" id="button" class="btn btn-dark mb-3" onclick="deleteText()">Очистить LocalStorage</button>
+		</div>
+		<div class="text-center mb-5">
+			<div class="col-auto">
+				<p id="blue" class="lead">0</p>
+				<button class="btn btn-default btn-primary" onclick="addBlue()">Мне нравится синий</button>
+			</div>
+			<div class="col-auto">
+				<p id="red" class="lead">0</p>
+				<button class="btn btn-default btn-danger" onclick="addRed()">Мне нравится красный</button>
+			</div>
+			<div class="col-auto">
+				<p id="green" class="lead">0</p>
+				<button class="btn btn-default btn-success" onclick="addGreen()">Мне нравится зеленый</button>
+			</div>
+		</div>
+		<form class="text-center">
+			<div class="col-auto mb-3">
+				<input type="text" id="input" class="form-control" id="inputPassword2" placeholder="Введите задачу"/>
+			</div>
+			<div class="col-auto">
+				<button type="submit" id="button" class="btn form-control btn-primary mb-3" onclick="addText()">Добавить в LocalStorage</button>
+			</div>
+		</form>
+		<ol id="ol" class="lead"></ol>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
